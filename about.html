@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GSAP (CDN) -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      id="navbar"
+      class="flex px-4 md:px-20 py-2 md:py-4 fixed left-0 top-0 w-full transition-colors duration-300 bg-transparent z-[50]"
+    >
+      <div class="logo">
+        <a href="/">
+          <img
+            src="./images/logo.png"
+            alt="My Company Logo"
+            width="30px"
+            height="30px"
+          />
+        </a>
+      </div>
+      <nav aria-label="Main Navigation" class="my-auto mx-auto font-medium">
+        <ul class="hidden md:flex md:space-x-8 lg:space-x-16">
+          <li><a href="./">Home</a></li>
+          <li>
+            <a href="./about.html" aria-current="page" class="text-[#795548]"
+              >About</a
+            >
+          </li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hidden md:flex space-x-3 my-auto text-xl">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <button
+        id="hamburger"
+        class="px-2 md:hidden hamburger"
+        onclick="toggleSidebar()"
+      >
+        <svg class="w-8 h-8" viewBox="0 0 24 24">
+          <path
+            class="line top"
+            d="M4 6h16"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            class="line middle"
+            d="M4 12h16"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            class="line bottom"
+            d="M4 18h16"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <div
+      id="overlay"
+      onclick="toggleSidebar()"
+      class="bg-[rgba(0, 0, 0, 0.5)] h-[100%] w-[100%] z-[90] fixed top-0 left-0 hidden"
+    ></div>
+
+    <div
+      id="sidebar"
+      class="h-[100dvh] bg-[#f7f2fa] w-[250px] fixed top-0 left-[-250px] rounded-tr-[20px] rounded-br-[20px] z-[99] transition-all duration-300 ease-in-out"
+    >
+      <div
+        class="w-full flex flex-col items-center justify-center h-40 bg-[#d89a74] rounded-tr-[20px]"
+      >
+        <img src="./images/logo.png" class="w-[40px] h-[50px]" alt="logo" />
+        <span class="text-[#382114] text-[10px]">BARISTO</span>
+        <span class="text-[#382114] text-[7px] mt-[-5px]">Technologies</span>
+      </div>
+      <nav>
+        <ul class="flex flex-col space-y-6 py-4 ps-3">
+          <li>
+            <a href="./" onclick="navigateWithDelay(event, './')">Home</a>
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              onclick="navigateWithDelay(event, './about.html')"
+              aria-current="page"
+              class="text-[#795548]"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./services.html"
+              onclick="navigateWithDelay(event, './services.html')"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              onclick="navigateWithDelay(event, './contact.html')"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="h-[1px] bg-gray-300"></div>
+      <div class="flex space-x-8 justify-center py-5">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+    <main>
+      <!-- About us Section -->
+      <section
+        id="about"
+        class="pt-14 md:pt-[70px] bg-[#f8f9fa] w-full overflow-hidden"
+      >
+        <!-- Header Banner -->
+        <div class="relative w-full h-[400px]">
+          <img
+            src="./images/about_us_frame.jpg"
+            alt="Team collaboration"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black/50 flex items-center">
+            <h2
+              class="text-white text-5xl md:text-6xl font-bold pl-10 md:pl-20 slide-right"
+            >
+              About us
+            </h2>
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div
+          class="max-w-7xl px-4 mx-auto py-10 md:py-24 flex flex-col lg:flex-row gap-10 md:gap-20"
+        >
+          <!-- Left Image -->
+          <div class="lg:w-1/2 empover-img">
+            <img
+              src="./images/data.jpg"
+              alt="Analytics dashboard"
+              class="w-full md:h-80 object-cover rounded-lg shadow"
+            />
+          </div>
+
+          <!-- Right Text -->
+          <div class="lg:w-1/2 flex items-center empover-text">
+            <div>
+              <h3 class="text-3xl font-semibold text-[#795648] mb-6">
+                Your Vision, Delivered with Precision
+              </h3>
+              <p class="text-[#767f86] text-lg leading-relaxed">
+                We take pride in our ability to deliver high-quality projects on
+                time, every time. With a focus on efficiency, innovation, and
+                attention to detail, our team ensures your project is executed
+                flawlessly, meeting all your expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team Section -->
+      <section class="py-16 bg-gray-50 w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <!-- Section Title -->
+          <div class="flex items-center mb-12">
+            <h2 class="text-5xl font-semibold text-[#795648] mr-6 our-text">
+              Our Team
+            </h2>
+            <div class="flex-grow h-[2px] bg-[#795648] our-line"></div>
+          </div>
+
+          <!-- Team Grid -->
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center"
+          >
+            <!-- Member -->
+            <div class="stagger-item-2">
+              <div
+                class="w-20 h-20 mx-auto mb-3 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white"
+              >
+                <i class="fas fa-user text-2xl text-gray-400"></i>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-900">Yahya</h3>
+              <p class="text-xs text-gray-500">CEO</p>
+            </div>
+
+            <div class="stagger-item-2">
+              <div
+                class="w-20 h-20 mx-auto mb-3 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white"
+              >
+                <i class="fas fa-user text-2xl text-gray-400"></i>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-900">Anu Shahad</h3>
+              <p class="text-xs text-gray-500">Managing Director</p>
+            </div>
+
+            <div class="stagger-item-2">
+              <div
+                class="w-20 h-20 mx-auto mb-3 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white"
+              >
+                <i class="fas fa-user text-2xl text-gray-400"></i>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-900">Riyas Bava</h3>
+              <p class="text-xs text-gray-500">Project Manager</p>
+            </div>
+
+            <div class="stagger-item-2">
+              <div
+                class="w-20 h-20 mx-auto mb-3 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white"
+              >
+                <i class="fas fa-user text-2xl text-gray-400"></i>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-900">Team Member</h3>
+              <p class="text-xs text-gray-500">Full Stack Developer</p>
+            </div>
+
+            <div class="stagger-item-2">
+              <div
+                class="w-20 h-20 mx-auto mb-3 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white"
+              >
+                <i class="fas fa-user text-2xl text-gray-400"></i>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-900">Ayisha</h3>
+              <p class="text-xs text-gray-500">Digital Marketing & SEO</p>
+            </div>
+
+            <div class="stagger-item-2">
+              <div
+                class="w-20 h-20 mx-auto mb-3 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white"
+              >
+                <i class="fas fa-user text-2xl text-gray-400"></i>
+              </div>
+              <h3 class="text-sm font-semibold text-gray-900">Team Member</h3>
+              <p class="text-xs text-gray-500">UI/UX & Web designing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#f8f9fa] py-16 w-full overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="lg:col-span-1">
+            <!-- Logo -->
+            <div class="flex items-center justify-start mb-4">
+              <img
+                src="images/logo_name.svg"
+                alt="logo"
+                class="w-[45%] md:w-[60%]"
+              />
+            </div>
+            <p class="text-gray-600 text-sm">
+              Digital solution partner for your business.
+            </p>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Business Consulting</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Workforce Outsourcing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Branding & Communication</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Enterprise Mobility</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Other Links -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">
+              Other Links
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                  >Terms Of Use</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Us -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Contact Us</h3>
+            <div class="space-y-3">
+              <p class="text-gray-600 text-sm font-medium">
+                Baristo Technologies PVT LTD.
+              </p>
+              <p class="text-gray-600 text-sm">
+                2nd floor, Daliya KPees Avenue,<br />
+                Malappuram - Perinthalmanna Rd, near collector<br />
+                bungalow,<br />
+                Up Hill, Malappuram, Kerala<br />
+                676505, India
+              </p>
+              <p class="text-gray-600 text-sm">Phone: +91 95677 00323</p>
+
+              <!-- Social Icons -->
+              <div class="flex space-x-3 mt-4 pt-4">
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                >
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-200 mt-12 pt-8 text-center">
+          <p class="text-gray-400 text-sm">
+            © 2025, Baristo Technologies | All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

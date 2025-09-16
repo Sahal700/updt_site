@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.empover-img,
+.empover-text {
+  will-change: transform, opacity;
+}
+
+#sidebar.active {
+  left: 0;
+}
+#overlay.active {
+  display: block;
+}
+
+.hamburger {
+  transition: all 0.3s ease-in-out;
+}
+
+.line {
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+/* Hamburger to X animation - CORRECTED */
+.hamburger.active .line.top {
+  transform: translateY(3px) rotate(45deg);
+}
+
+.hamburger.active .line.middle {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hamburger.active .line.bottom {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Alternative smoother animation - CORRECTED */
+.hamburger-smooth .line {
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.hamburger-smooth.active .line.top {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger-smooth.active .line.middle {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hamburger-smooth.active .line.bottom {
+  transform: translateY(-6px) rotate(-45deg);
+}
