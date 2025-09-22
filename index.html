@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
     <title>Baristo</title>
 
     <link rel="icon" href="./images/logo.png" type="image/png" />
@@ -52,17 +53,17 @@
       <nav aria-label="Main Navigation" class="my-auto mx-auto font-medium">
         <ul class="hidden md:flex md:space-x-8 lg:space-x-16">
           <li>
-            <a href="./" aria-current="page" class="text-[#795548]">Home</a>
+            <a href="./" aria-current="page" class="text-[#795548] p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Home</a>
           </li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li ><a href="./about.html" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">About</a></li>
+          <li><a href="./services.html" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Services</a></li>
+          <li><a href="./contact.html" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Contact</a></li>
         </ul>
       </nav>
       <div class="hidden md:flex space-x-3 my-auto text-xl">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
 
       <button
@@ -148,9 +149,9 @@
       </nav>
       <div class="h-[1px] bg-gray-300"></div>
       <div class="flex space-x-8 justify-center py-5">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
     <main>
@@ -160,30 +161,30 @@
         class="flex flex-col items-center bg-[url(./images/bg.jpeg)] md:h-[100dvh] pt-16 md:pt-36 px-4 md:px-20 w-full overflow-hidden"
       >
         <div class="flex flex-col md:flex-row items-center w-full">
-          <div id="hero-text" class="text-center md:text-start">
+          <div id="hero-text" class="text-center md:text-start opacity-0 -translate-x-[30%]">
             <h2
-              class="text-6xl md:text-[88px] font-[350] leading-[1.4] md:leading-tight"
+              class="text-6xl md:text-[100px] font-[350] leading-[1.4] md:leading-tight"
             >
               Experts in<br /><span
-                class="text-[85px] md:text-[118px] font-semibold"
+                class="text-[85px] md:text-[150px] font-semibold"
                 >Crafting</span
               >
             </h2>
-            <p class="text-sm mt-1 md:mt-0 md:text-2xl mx-1 md:mx-0">
+            <p class="text-sm mt-1 md:mt-0 md:text-2xl mx-1 md:mx-0 font-medium">
               transform your business with innovative digital solution
             </p>
             <div
               class="flex flex-col md:flex-row md:space-x-4 px-14 md:px-0 mt-10 md:me-24"
             >
               <a
-                href="/services"
+                href="./services.html"
                 class="flex items-center justify-center w-full py-3 md:py-4 bg-gradient-to-b from-[#3f2315] to-[#b25c38] text-white rounded-lg font-semibold"
               >
                 Our Services
                 <span class="ml-2">→</span>
               </a>
               <a
-                href="/contact"
+                href="./contact.html"
                 class="text-center mt-3 md:mt-0 w-full py-3 md:py-4 bg-white text-black rounded-lg font-semibold border border-gray-300 transition transform hover:scale-105 hover:shadow-md"
               >
                 Contact us
@@ -192,9 +193,9 @@
           </div>
           <div
             id="hero-image"
-            class="ms-auto flex justify-center md:justify-end my-10 md:my-0"
+            class="ms-auto flex justify-center md:justify-end my-10 md:my-0 opacity-0 translate-x-[30%]"
           >
-            <div class="w-[70%] md:w-[92%]">
+            <div class="w-[70%] md:w-[95%]">
               <img src="./images/hero.png" class="w-[100%]" alt="hero image" />
             </div>
           </div>
@@ -240,296 +241,246 @@
         <div class="max-w-7xl mx-auto w-full">
           <!-- Services Grid -->
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12"
+      >
+        <!-- Website Design & Development -->
+        <div class="text-center stagger-item">
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
           >
-            <!-- Branding & Design -->
-            <div class="text-center stagger-item">
-              <div
-                class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  width="59"
-                  height="59"
-                  viewBox="0 0 59 59"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.6667 29.9917H36.875"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.6667 39.825H30.4342"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M24.5833 14.75H34.4167C39.3333 14.75 39.3333 12.2917 39.3333 9.83332C39.3333 4.91666 36.875 4.91666 34.4167 4.91666H24.5833C22.125 4.91666 19.6667 4.91666 19.6667 9.83332C19.6667 14.75 22.125 14.75 24.5833 14.75Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M39.3333 9.88251C47.5196 10.325 51.625 13.3488 51.625 24.5833V39.3333C51.625 49.1667 49.1667 54.0833 36.875 54.0833H22.125C9.83333 54.0833 7.375 49.1667 7.375 39.3333V24.5833C7.375 13.3733 11.4804 10.325 19.6667 9.88251"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Branding & Design
-              </h3>
-              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-                A branding design company that offers a complete range of
-                creative services from logos to print and visual.
-              </p>
-            </div>
-
-            <!-- Web & App designing -->
-            <div class="text-center stagger-item">
-              <div
-                class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  width="59"
-                  height="59"
-                  viewBox="0 0 59 59"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.60416 50.3958C10.6446 52.4363 13.9387 52.4363 15.9792 50.3958L47.9375 18.4375C49.9779 16.3971 49.9779 13.1029 47.9375 11.0625C45.8971 9.02209 42.6029 9.02209 40.5625 11.0625L8.60416 43.0208C6.56375 45.0613 6.56375 48.3554 8.60416 50.3958Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M44.2746 22.1004L36.8996 14.7254"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M20.8958 5.99832L24.5833 4.91666L23.5017 8.60416L24.5833 12.2917L20.8958 11.21L17.2083 12.2917L18.29 8.60416L17.2083 4.91666L20.8958 5.99832Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M11.0625 20.7483L14.75 19.6667L13.6683 23.3542L14.75 27.0417L11.0625 25.96L7.375 27.0417L8.45667 23.3542L7.375 19.6667L11.0625 20.7483Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M47.9375 33.04L51.625 31.9583L50.5433 35.6458L51.625 39.3333L47.9375 38.2517L44.25 39.3333L45.3317 35.6458L44.25 31.9583L47.9375 33.04Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Web & App designing
-              </h3>
-              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-                We design and develop responsive, user-friendly websites &
-                mobile apps tailored to your business, combining creativity with
-                functionality for a seamless online experience.
-              </p>
-            </div>
-
-            <!-- Development -->
-            <div class="text-center stagger-item">
-              <div
-                class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  width="59"
-                  height="59"
-                  viewBox="0 0 59 59"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M20.8959 46.6345H19.6667C9.83335 46.6345 4.91669 44.1762 4.91669 31.8845V19.5928C4.91669 9.7595 9.83335 4.84283 19.6667 4.84283H39.3334C49.1667 4.84283 54.0834 9.7595 54.0834 19.5928V31.8845C54.0834 41.7178 49.1667 46.6345 39.3334 46.6345H38.1042C37.3421 46.6345 36.6046 47.0033 36.1375 47.6179L32.45 52.5346C30.8275 54.6979 28.1725 54.6979 26.55 52.5346L22.8625 47.6179C22.4692 47.0771 21.5842 46.6345 20.8959 46.6345Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.6667 21.3875L14.75 26.3042L19.6667 31.2209"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M39.3333 21.3875L44.25 26.3042L39.3333 31.2209"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M31.9584 20.5762L27.0417 32.0321"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Development
-              </h3>
-              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-                We provide innovative software solutions and development
-                services, delivering efficient, scalable, and user-friendly
-                applications to meet your business needs.
-              </p>
-            </div>
-
-            <!-- Digital Marketing -->
-            <div class="text-center stagger-item">
-              <div
-                class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  width="59"
-                  height="59"
-                  viewBox="0 0 59 59"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22.125 54.0834H36.875C49.1667 54.0834 54.0833 49.1667 54.0833 36.875V22.125C54.0833 9.83335 49.1667 4.91669 36.875 4.91669H22.125C9.83332 4.91669 4.91666 9.83335 4.91666 22.125V36.875C4.91666 49.1667 9.83332 54.0834 22.125 54.0834Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M29.5 38.1041C34.2519 38.1041 38.1042 34.2519 38.1042 29.5C38.1042 24.748 34.2519 20.8958 29.5 20.8958C24.748 20.8958 20.8958 24.748 20.8958 29.5C20.8958 34.2519 24.748 38.1041 29.5 38.1041Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M43.3555 17.2084H43.3839"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Digital Marketing
-              </h3>
-              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-                we specialize in SEO, social media, content, and paid ads to
-                boost your brand, attract customers, and drive results. Let's
-                take your business to the next level!
-              </p>
-            </div>
-
-            <!-- Video production -->
-            <div class="text-center stagger-item">
-              <div
-                class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  width="59"
-                  height="59"
-                  viewBox="0 0 59 59"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M30.8029 50.1992H15.2663C7.49792 50.1992 4.91667 45.0367 4.91667 39.8496V19.1504C4.91667 11.3821 7.49792 8.80084 15.2663 8.80084H30.8029C38.5713 8.80084 41.1525 11.3821 41.1525 19.1504V39.8496C41.1525 47.6179 38.5467 50.1992 30.8029 50.1992Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M47.9867 42.0375L41.1525 37.2438V21.7317L47.9867 16.9379C51.33 14.6025 54.0833 16.0284 54.0833 20.1338V38.8663C54.0833 42.9717 51.33 44.3975 47.9867 42.0375Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M28.2708 27.0417C30.3074 27.0417 31.9583 25.3907 31.9583 23.3542C31.9583 21.3176 30.3074 19.6667 28.2708 19.6667C26.2343 19.6667 24.5833 21.3176 24.5833 23.3542C24.5833 25.3907 26.2343 27.0417 28.2708 27.0417Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Video production
-              </h3>
-              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-                A branding design company that offers a complete range of
-                creative services from logos to print and visual.
-              </p>
-            </div>
-
-            <!-- SEO -->
-            <div class="text-center stagger-item">
-              <div
-                class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] rounded-full flex items-center justify-center mx-auto mb-6"
-              >
-                <div class="text-white font-bold text-lg">
-                  <svg
-                    width="57"
-                    height="19"
-                    viewBox="0 0 57 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.272 18.312C5.656 18.312 4.28 17.944 3.144 17.208C2.024 16.472 1.24 15.464 0.792 14.184L3.168 12.792C3.84 14.68 5.232 15.624 7.344 15.624C8.384 15.624 9.16 15.424 9.672 15.024C10.2 14.608 10.464 14.072 10.464 13.416C10.464 12.728 10.184 12.208 9.624 11.856C9.064 11.488 8.072 11.088 6.648 10.656C5.848 10.416 5.2 10.192 4.704 9.984C4.208 9.776 3.68 9.488 3.12 9.12C2.576 8.736 2.168 8.264 1.896 7.704C1.624 7.144 1.488 6.488 1.488 5.736C1.488 4.248 2.016 3.072 3.072 2.208C4.128 1.328 5.4 0.887999 6.888 0.887999C8.232 0.887999 9.408 1.216 10.416 1.872C11.424 2.528 12.2 3.432 12.744 4.584L10.416 5.928C9.712 4.36 8.536 3.576 6.888 3.576C6.088 3.576 5.448 3.768 4.968 4.152C4.488 4.52 4.248 5.024 4.248 5.664C4.248 6.288 4.488 6.784 4.968 7.152C5.464 7.504 6.352 7.88 7.632 8.28C8.272 8.488 8.736 8.648 9.024 8.76C9.328 8.856 9.744 9.016 10.272 9.24C10.816 9.464 11.224 9.688 11.496 9.912C11.768 10.136 12.056 10.416 12.36 10.752C12.68 11.088 12.904 11.472 13.032 11.904C13.16 12.336 13.224 12.824 13.224 13.368C13.224 14.888 12.672 16.096 11.568 16.992C10.48 17.872 9.048 18.312 7.272 18.312ZM24.3853 15.36H31.8253V18H21.6253V1.2H31.7053V3.84H24.3853V8.208H31.1053V10.824H24.3853V15.36ZM54.3919 15.792C52.7119 17.472 50.6559 18.312 48.2239 18.312C45.7919 18.312 43.7279 17.472 42.0319 15.792C40.3519 14.096 39.5119 12.032 39.5119 9.6C39.5119 7.168 40.3519 5.112 42.0319 3.432C43.7279 1.736 45.7919 0.887999 48.2239 0.887999C50.6559 0.887999 52.7119 1.736 54.3919 3.432C56.0879 5.112 56.9359 7.168 56.9359 9.6C56.9359 12.032 56.0879 14.096 54.3919 15.792ZM43.9759 13.92C45.1279 15.056 46.5439 15.624 48.2239 15.624C49.9039 15.624 51.3119 15.056 52.4479 13.92C53.5999 12.768 54.1759 11.328 54.1759 9.6C54.1759 7.872 53.5999 6.44 52.4479 5.304C51.3119 4.152 49.9039 3.576 48.2239 3.576C46.5439 3.576 45.1279 4.152 43.9759 5.304C42.8399 6.44 42.2719 7.872 42.2719 9.6C42.2719 11.328 42.8399 12.768 43.9759 13.92Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                S E O
-              </h3>
-              <p class="text-gray-700 text-base md:text-lg leading-relaxed">
-                Enhancing your website's visibility on search engines increases
-                the likelihood of attracting organic traffic.
-              </p>
-            </div>
+            <svg
+              width="59"
+              height="59"
+              viewBox="0 0 59 59"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.60416 50.3958C10.6446 52.4363 13.9387 52.4363 15.9792 50.3958L47.9375 18.4375C49.9779 16.3971 49.9779 13.1029 47.9375 11.0625C45.8971 9.02209 42.6029 9.02209 40.5625 11.0625L8.60416 43.0208C6.56375 45.0613 6.56375 48.3554 8.60416 50.3958Z"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M44.2746 22.1004L36.8996 14.7254"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.8958 5.99832L24.5833 4.91666L23.5017 8.60416L24.5833 12.2917L20.8958 11.21L17.2083 12.2917L18.29 8.60416L17.2083 4.91666L20.8958 5.99832Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.0625 20.7483L14.75 19.6667L13.6683 23.3542L14.75 27.0417L11.0625 25.96L7.375 27.0417L8.45667 23.3542L7.375 19.6667L11.0625 20.7483Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M47.9375 33.04L51.625 31.9583L50.5433 35.6458L51.625 39.3333L47.9375 38.2517L44.25 39.3333L45.3317 35.6458L44.25 31.9583L47.9375 33.04Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Website Design & Development
+          </h3>
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+            We create stunning, responsive websites tailored to your brand, ensuring
+            a seamless user experience and robust functionality across all devices.
+          </p>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div class="text-center stagger-item">
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <svg
+              width="59"
+              height="59"
+              viewBox="0 0 59 59"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="18" y="4" width="23" height="51" rx="4" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M25 45H34" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Mobile App Development
+          </h3>
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+            We build high-performance, intuitive mobile applications for both iOS and Android,
+            focusing on user-centric design and scalable architecture.
+          </p>
+        </div>
+
+        <!-- Custom Software Solutions -->
+        <div class="text-center stagger-item">
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <svg
+              width="59"
+              height="59"
+              viewBox="0 0 59 59"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.8959 46.6345H19.6667C9.83335 46.6345 4.91669 44.1762 4.91669 31.8845V19.5928C4.91669 9.7595 9.83335 4.84283 19.6667 4.84283H39.3334C49.1667 4.84283 54.0834 9.7595 54.0834 19.5928V31.8845C54.0834 41.7178 49.1667 46.6345 39.3334 46.6345H38.1042C37.3421 46.6345 36.6046 47.0033 36.1375 47.6179L32.45 52.5346C30.8275 54.6979 28.1725 54.6979 26.55 52.5346L22.8625 47.6179C22.4692 47.0771 21.5842 46.6345 20.8959 46.6345Z"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19.6667 21.3875L14.75 26.3042L19.6667 31.2209"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M39.3333 21.3875L44.25 26.3042L39.3333 31.2209"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M31.9584 20.5762L27.0417 32.0321"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Custom Software Solutions
+          </h3>
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+            We develop bespoke software applications to solve your unique business challenges,
+            from enterprise-level systems to specialized tools that streamline your operations.
+          </p>
+        </div>
+
+        <!-- Software Quality Assurance & Testing -->
+        <div class="text-center stagger-item">
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <svg
+              width="59"
+              height="59"
+              viewBox="0 0 59 59"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M14.75 29.5L24.5833 39.3333L44.25 19.6667" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M29.5 54.0833C43.435 54.0833 54.0833 43.435 54.0833 29.5C54.0833 15.565 43.435 4.91666 29.5 4.91666C15.565 4.91666 4.91666 15.565 4.91666 29.5C4.91666 43.435 15.565 54.0833 29.5 54.0833Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Software Quality Assurance & Testing
+          </h3>
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+            Our rigorous testing processes ensure your software is reliable, secure,
+            and free of defects, providing a flawless experience for your users.
+          </p>
+        </div>
+
+        <!-- Creative & Visual Design -->
+        <div class="text-center stagger-item">
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M49.1667 36.875L27.0417 54.0833L4.91666 31.9583L27.0417 14.75L49.1667 31.9583V36.875Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44.25 41.7917L27.0417 54.0833L9.83333 41.7917L27.0417 29.5L44.25 41.7917Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44.25 41.7917L44.25 29.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Creative & Visual Design
+          </h3>
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+            We craft compelling visual experiences, from graphic design and illustrations
+            to user interfaces, that captivate your audience and communicate your message effectively.
+          </p>
+        </div>
+
+        <!-- Branding & Design -->
+        <div class="text-center stagger-item">
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-[#522c1b] to-[#a15433] bg-amber-800 rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <svg
+              width="59"
+              height="59"
+              viewBox="0 0 59 59"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.6667 29.9917H36.875"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M19.6667 39.825H30.4342"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M24.5833 14.75H34.4167C39.3333 14.75 39.3333 12.2917 39.3333 9.83332C39.3333 4.91666 36.875 4.91666 34.4167 4.91666H24.5833C22.125 4.91666 19.6667 4.91666 19.6667 9.83332C19.6667 14.75 22.125 14.75 24.5833 14.75Z"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M39.3333 9.88251C47.5196 10.325 51.625 13.3488 51.625 24.5833V39.3333C51.625 49.1667 49.1667 54.0833 36.875 54.0833H22.125C9.83333 54.0833 7.375 49.1667 7.375 39.3333V24.5833C7.375 13.3733 11.4804 10.325 19.6667 9.88251"
+                stroke="white"
+                stroke-width="3"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Branding & Design
+          </h3>
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+            We help you build a cohesive and memorable brand identity, from logo design and color palettes to
+            brand voice and messaging, ensuring your business stands out.
+          </p>
+        </div>
+      </div>
         </div>
       </section>
       <section
@@ -872,19 +823,19 @@
                 <!-- Social Icons -->
                 <div class="flex space-x-3 mt-4 pt-4">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"
                     class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
                   >
                     <i class="fab fa-facebook-f"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/baristotechnologies/#" target="_blank"
                     class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
                   >
                     <i class="fab fa-instagram"></i>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"
                     class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
                   >
                     <i class="fab fa-linkedin-in"></i>
@@ -903,7 +854,7 @@
           <!-- Copyright -->
           <div class="border-t border-gray-200 mt-12 pt-8 text-center">
             <p class="text-gray-400 text-sm">
-              © 2025, Baristo Technologies | All Rights Reserved.
+              © 2024, Baristo Technologies | All Rights Reserved.
             </p>
           </div>
         </div>

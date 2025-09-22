@@ -50,20 +50,18 @@
       </div>
       <nav aria-label="Main Navigation" class="my-auto mx-auto font-medium">
         <ul class="hidden md:flex md:space-x-8 lg:space-x-16">
-          <li><a href="/">Home</a></li>
-          <li><a href="./about.html">About</a></li>
           <li>
-            <a href="./services.html" aria-current="page" class="text-[#795548]"
-              >Services</a
-            >
+            <a href="./" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Home</a>
           </li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li ><a href="./about.html" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">About</a></li>
+          <li><a href="./services.html" aria-current="page" class="text-[#795548] p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Services</a></li>
+          <li><a href="./contact.html" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Contact</a></li>
         </ul>
       </nav>
       <div class="hidden md:flex space-x-3 my-auto text-xl">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
 
       <button
@@ -146,9 +144,9 @@
       </nav>
       <div class="h-[1px] bg-gray-300"></div>
       <div class="flex space-x-8 justify-center py-5">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
     <main>
@@ -156,9 +154,9 @@
         <!-- Header Banner -->
         <div class="relative w-full h-[400px]">
           <img
-            src="./images/about_us_frame.jpg"
+            src="./images/service_bg.jpg"
             alt="Team collaboration"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover object-[0%_60%]"
           />
           <div class="absolute inset-0 bg-black/50 flex items-center">
             <h2
@@ -177,81 +175,124 @@
             </h2>
           </div>
 
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-10 gap-8"
-          >
-            <!-- Service 1 - Branding & Design -->
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 stagger-item-2"
-            >
-              <div class="h-48 bg-gray-100">
-                <img
-                  src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop"
-                  alt="Branding and Design"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="p-6 text-center">
-                <h3 class="text-lg font-semibold text-[#795548]">
-                  Branding & Design
-                </h3>
-              </div>
+          <div class="relative">
+        <div
+          id="carousel-container"
+          class="carousel-container flex gap-8 overflow-x-scroll snap-x snap-mandatory pb-14 md:pe-8 lg:pe-16"
+        >
+          <!-- Service 1 - Website Design & Development -->
+          <div class="relative rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex-shrink-0 snap-center w-full md:w-1/2 lg:w-1/3">
+            <div class="w-[90%] left-[50%] bottom-[0] -translate-x-[50%] translate-y-[50%] absolute p-6 text-center rounded-2xl shadow-lg bg-white/50 backdrop-blur-md border border-white/20">
+              <h3 class="text-lg font-semibold text-gray-800">Website Design & Development</h3>
             </div>
-
-            <!-- Service 2 - Digital Marketing -->
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 stagger-item-2"
-            >
-              <div class="h-48 bg-gray-100">
-                <img
-                  src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=400&h=300&fit=crop"
-                  alt="Digital Marketing"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="p-6 text-center">
-                <h3 class="text-lg font-semibold text-[#795548]">
-                  Digital Marketing
-                </h3>
-              </div>
-            </div>
-
-            <!-- Service 3 - Web & App Design -->
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 stagger-item-2"
-            >
-              <div class="h-48 bg-gray-100">
-                <img
-                  src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=300&fit=crop"
-                  alt="Web & App Design"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="p-6 text-center">
-                <h3 class="text-lg font-semibold text-[#795548]">
-                  Web & App Design
-                </h3>
-              </div>
-            </div>
-
-            <!-- Service 4 - Development -->
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 stagger-item-2"
-            >
-              <div class="h-48 bg-gray-100">
-                <img
-                  src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&h=300&fit=crop"
-                  alt="Development"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="p-6 text-center">
-                <h3 class="text-lg font-semibold text-[#795548]">
-                  Development
-                </h3>
-              </div>
+            <div class="z-5 h-80 rounded-2xl overflow-hidden">
+              <img
+                src="./images/webdev.jpg"
+                alt="Website Design"
+                class="w-full h-full object-cover rounded-2xl"
+              />
             </div>
           </div>
+
+          <!-- Service 4 - Mobile App Development -->
+          <div class="relative rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex-shrink-0 snap-center w-full md:w-1/2 lg:w-1/3">
+            <div class="w-[90%] left-[50%] bottom-[0] -translate-x-[50%] translate-y-[50%] absolute p-6 text-center rounded-2xl shadow-lg bg-white/50 backdrop-blur-md border border-white/20">
+              <h3 class="text-lg font-semibold text-gray-800">Mobile App Development</h3>
+            </div>
+            <div class="z-5 h-80 rounded-2xl overflow-hidden">
+              <img
+                src="./images/mobileappdev.jpg"
+                alt="Mobile App Development"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+
+          <!-- Service 3 - Custom Software Solutions -->
+          <div class="relative rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex-shrink-0 snap-center w-full md:w-1/2 lg:w-1/3">
+            <div class="w-[90%] left-[50%] bottom-[0] -translate-x-[50%] translate-y-[50%] absolute p-6 text-center rounded-2xl shadow-lg bg-white/50 backdrop-blur-md border border-white/20">
+              <h3 class="text-lg font-semibold text-gray-800">Custom Software Solutions</h3>
+            </div>
+            <div class="z-5 h-80 rounded-2xl overflow-hidden">
+              <img
+                src="./images/customsoftware.jpg"
+                alt="Custom Software Solutions"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+
+          <!-- Service 2 - Software QA & Testing -->
+          <div class="relative rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex-shrink-0 snap-center w-full md:w-1/2 lg:w-1/3">
+            <div class="w-[90%] left-[50%] bottom-[0] -translate-x-[50%] translate-y-[50%] absolute p-6 text-center rounded-2xl shadow-lg bg-white/50 backdrop-blur-md border border-white/20">
+              <h3 class="text-lg font-semibold text-gray-800">Software Quality Assurance & Testing</h3>
+            </div>
+            <div class="z-5 h-80 rounded-2xl overflow-hidden">
+              <img
+                src="./images/qa.jpg"
+                alt="Software Quality Assurance"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+
+          
+
+          <!-- Service 5 - Creative & Visual Design -->
+          <div class="relative rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex-shrink-0 snap-center w-full md:w-1/2 lg:w-1/3">
+            <div class="w-[90%] left-[50%] bottom-[0] -translate-x-[50%] translate-y-[50%] absolute p-6 text-center rounded-2xl shadow-lg bg-white/50 backdrop-blur-md border border-white/20">
+              <h3 class="text-lg font-semibold text-gray-800">Creative & Visual Design</h3>
+            </div>
+            <div class="z-5 h-80 rounded-2xl overflow-hidden">
+              <img
+                src="./images/creativedesign.jpg"
+                alt="Creative & Visual Design"
+                class="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel navigation buttons -->
+        <button
+          id="prev-btn"
+          class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-md p-3 rounded-full shadow-lg hover:bg-white transition-colors duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button
+          id="next-btn"
+          class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/70 backdrop-blur-md p-3 rounded-full shadow-lg hover:bg-white transition-colors duration-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
         </div>
 
         <!-- Content Section -->
@@ -381,19 +422,19 @@
               <!-- Social Icons -->
               <div class="flex space-x-3 mt-4 pt-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"
                   class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
                 >
                   <i class="fab fa-facebook-f"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/baristotechnologies/#" target="_blank"
                   class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
                 >
                   <i class="fab fa-instagram"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"
                   class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
                 >
                   <i class="fab fa-linkedin-in"></i>
@@ -412,7 +453,7 @@
         <!-- Copyright -->
         <div class="border-t border-gray-200 mt-12 pt-8 text-center">
           <p class="text-gray-400 text-sm">
-            © 2025, Baristo Technologies | All Rights Reserved.
+            © 2024, Baristo Technologies | All Rights Reserved.
           </p>
         </div>
       </div>

@@ -32,8 +32,8 @@ function navigateWithDelay(event, url) {
 // animations -----------------
 window.addEventListener("load", () => {
   const tl = gsap.timeline();
-  tl.from("#hero-text", { opacity: 0, xPercent: -30, duration: 1 });
-  tl.from("#hero-image", { opacity: 0, xPercent: 30, duration: 1 }, "-=0.8");
+  tl.to("#hero-text", { opacity: 1, xPercent:30, duration: 1 });
+  tl.to("#hero-image", { opacity: 1, xPercent: -30, duration: 1 }, "-=0.8");
 
   gsap.from(".empover-img", {
     opacity: 0,
@@ -136,3 +136,39 @@ window.addEventListener("load", () => {
     },
   });
 });
+
+
+const carouselContainer = document.getElementById('carousel-container');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+
+      // Scroll to the next card
+      nextBtn.addEventListener('click', () => {
+        const itemWidth = carouselContainer.querySelector('div').offsetWidth + 32; // item width + gap
+        carouselContainer.scrollBy({ left: itemWidth, behavior: 'smooth' });
+      });
+
+      // Scroll to the previous card
+      prevBtn.addEventListener('click', () => {
+        const itemWidth = carouselContainer.querySelector('div').offsetWidth + 32; // item width + gap
+        carouselContainer.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+      });
+
+      // Show/hide buttons based on scroll position
+      carouselContainer.addEventListener('scroll', () => {
+        const atStart = carouselContainer.scrollLeft === 0;
+        const atEnd =
+          carouselContainer.scrollLeft + carouselContainer.clientWidth >= carouselContainer.scrollWidth - 1; // -1 for rounding errors
+
+        prevBtn.style.opacity = atStart ? '0' : '1';
+        prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+        nextBtn.style.opacity = atEnd ? '0' : '1';
+        nextBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
+      });
+
+      // Initial check on load
+      window.addEventListener('load', () => {
+        const atStart = carouselContainer.scrollLeft === 0;
+        prevBtn.style.opacity = atStart ? '0' : '1';
+        prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+      });

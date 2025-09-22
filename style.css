@@ -60,3 +60,11 @@ html {
 .hamburger-smooth.active .line.bottom {
   transform: translateY(-6px) rotate(-45deg);
 }
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+.carousel-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+}
