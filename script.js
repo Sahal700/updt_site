@@ -135,6 +135,13 @@ window.addEventListener("load", () => {
       start: "top 90%",
     },
   });
+  gsap.to(".stagger-service-card", {
+    opacity: 1,
+    scale:1,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+  });
 });
 
 
