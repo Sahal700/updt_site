@@ -32,12 +32,12 @@ function navigateWithDelay(event, url) {
 // animations -----------------
 window.addEventListener("load", () => {
   const tl = gsap.timeline();
-  tl.to("#hero-text", { opacity: 1, xPercent:30, duration: 1 });
+  tl.to("#hero-text", { opacity: 1, xPercent: 30, duration: 1 });
   tl.to("#hero-image", { opacity: 1, xPercent: -30, duration: 1 }, "-=0.8");
 
-  gsap.from(".empover-img", {
-    opacity: 0,
-    xPercent: -30,
+  gsap.to(".empover-img", {
+    opacity: 1,
+    x: 0,
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
@@ -46,9 +46,9 @@ window.addEventListener("load", () => {
     },
   });
 
-  gsap.from(".empover-text", {
-    opacity: 0,
-    xPercent: 30,
+  gsap.to(".empover-text", {
+    opacity: 1,
+    x: 0,
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
@@ -69,9 +69,9 @@ window.addEventListener("load", () => {
     },
   });
 
-  gsap.from(".scale-up", {
-    opacity: 0,
-    scale: 0,
+  gsap.to(".scale-up", {
+    opacity: 1,
+    scale: 1,
     duration: 1.2,
     ease: "back.out(1.5)",
     scrollTrigger: {
@@ -79,9 +79,9 @@ window.addEventListener("load", () => {
       start: "top 80%",
     },
   });
-  gsap.from(".slide-right", {
-    opacity: 0,
-    xPercent: -40,
+  gsap.to(".slide-right", {
+    opacity: 1,
+    x: 0,
     duration: 1,
     ease: "power2.out",
     scrollTrigger: {
@@ -137,7 +137,7 @@ window.addEventListener("load", () => {
   });
   gsap.to(".stagger-service-card", {
     opacity: 1,
-    scale:1,
+    scale: 1,
     duration: 1,
     stagger: 0.2,
     ease: "power3.out",
@@ -146,36 +146,36 @@ window.addEventListener("load", () => {
 
 
 const carouselContainer = document.getElementById('carousel-container');
-      const prevBtn = document.getElementById('prev-btn');
-      const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
 
-      // Scroll to the next card
-      nextBtn.addEventListener('click', () => {
-        const itemWidth = carouselContainer.querySelector('div').offsetWidth + 32; // item width + gap
-        carouselContainer.scrollBy({ left: itemWidth, behavior: 'smooth' });
-      });
+// Scroll to the next card
+nextBtn.addEventListener('click', () => {
+  const itemWidth = carouselContainer.querySelector('div').offsetWidth + 32; // item width + gap
+  carouselContainer.scrollBy({ left: itemWidth, behavior: 'smooth' });
+});
 
-      // Scroll to the previous card
-      prevBtn.addEventListener('click', () => {
-        const itemWidth = carouselContainer.querySelector('div').offsetWidth + 32; // item width + gap
-        carouselContainer.scrollBy({ left: -itemWidth, behavior: 'smooth' });
-      });
+// Scroll to the previous card
+prevBtn.addEventListener('click', () => {
+  const itemWidth = carouselContainer.querySelector('div').offsetWidth + 32; // item width + gap
+  carouselContainer.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+});
 
-      // Show/hide buttons based on scroll position
-      carouselContainer.addEventListener('scroll', () => {
-        const atStart = carouselContainer.scrollLeft === 0;
-        const atEnd =
-          carouselContainer.scrollLeft + carouselContainer.clientWidth >= carouselContainer.scrollWidth - 1; // -1 for rounding errors
+// Show/hide buttons based on scroll position
+carouselContainer.addEventListener('scroll', () => {
+  const atStart = carouselContainer.scrollLeft === 0;
+  const atEnd =
+    carouselContainer.scrollLeft + carouselContainer.clientWidth >= carouselContainer.scrollWidth - 1; // -1 for rounding errors
 
-        prevBtn.style.opacity = atStart ? '0' : '1';
-        prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
-        nextBtn.style.opacity = atEnd ? '0' : '1';
-        nextBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
-      });
+  prevBtn.style.opacity = atStart ? '0' : '1';
+  prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+  nextBtn.style.opacity = atEnd ? '0' : '1';
+  nextBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
+});
 
-      // Initial check on load
-      window.addEventListener('load', () => {
-        const atStart = carouselContainer.scrollLeft === 0;
-        prevBtn.style.opacity = atStart ? '0' : '1';
-        prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
-      });
+// Initial check on load
+window.addEventListener('load', () => {
+  const atStart = carouselContainer.scrollLeft === 0;
+  prevBtn.style.opacity = atStart ? '0' : '1';
+  prevBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+});

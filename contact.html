@@ -1,433 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
 
-    <link rel="icon" href="./images/logo.png" type="image/png" />
+        <link rel="icon" href="./images/logo.png" type="image/png" />
 
-    <!-- tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- fontawsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+        <!-- fontawsome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <!-- GSAP (CDN) -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <!-- GSAP (CDN) -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header
-      id="navbar"
-      class="flex px-4 md:px-20 py-2 md:py-4 fixed left-0 top-0 w-full transition-colors duration-300 bg-transparent z-[50]"
-    >
-      <div class="logo">
-        <a href="/">
-          <img
-            src="./images/logo.png"
-            alt="My Company Logo"
-            width="30px"
-            height="30px"
-          />
-        </a>
-      </div>
-      <nav aria-label="Main Navigation" class="my-auto mx-auto font-medium">
-        <ul class="hidden md:flex md:space-x-8 lg:space-x-16">
-          <li>
-            <a href="./" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Home</a>
-          </li>
-          <li ><a href="./about.html" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">About</a></li>
-          <li><a href="./services.html" class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Services</a></li>
-          <li><a href="./contact.html" aria-current="page" class="text-[#795548] p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hidden md:flex space-x-3 my-auto text-xl">
-        <a href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header
+            id="navbar"
+            class="flex px-4 md:px-20 py-2 md:py-4 fixed left-0 top-0 w-full transition-colors duration-300 bg-transparent z-[50]"
+        >
+            <div class="logo">
+                <a href="/">
+                    <img src="./images/logo.png" alt="My Company Logo" width="30px" height="30px" />
+                </a>
+            </div>
+            <nav aria-label="Main Navigation" class="my-auto mx-auto font-medium">
+                <ul class="hidden md:flex md:space-x-8 lg:space-x-16">
+                    <li>
+                        <a
+                            href="./"
+                            class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./about.html"
+                            class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./services.html"
+                            class="p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200"
+                            >Services</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./contact.html"
+                            aria-current="page"
+                            class="text-[#795548] p-2 rounded-lg bg-transparent hover:bg-[#80808030] transition duration-200"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <div class="hidden md:flex space-x-3 my-auto text-xl">
+                <a
+                    href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr"
+                    target="_blank"
+                    ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
 
-      <button
-        id="hamburger"
-        class="px-2 md:hidden hamburger"
-        onclick="toggleSidebar()"
-      >
-        <svg class="w-8 h-8" viewBox="0 0 24 24">
-          <path
-            class="line top"
-            d="M4 6h16"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            class="line middle"
-            d="M4 12h16"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            class="line bottom"
-            d="M4 18h16"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-        </svg>
-      </button>
-    </header>
+            <button id="hamburger" class="px-2 md:hidden hamburger" onclick="toggleSidebar()">
+                <svg class="w-8 h-8" viewBox="0 0 24 24">
+                    <path
+                        class="line top"
+                        d="M4 6h16"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        class="line middle"
+                        d="M4 12h16"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                    <path
+                        class="line bottom"
+                        d="M4 18h16"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+                </svg>
+            </button>
+        </header>
 
-    <div
-      id="overlay"
-      onclick="toggleSidebar()"
-      class="bg-[rgba(0, 0, 0, 0.5)] h-[100%] w-[100%] z-[90] fixed top-0 left-0 hidden"
-    ></div>
+        <div
+            id="overlay"
+            onclick="toggleSidebar()"
+            class="bg-[rgba(0, 0, 0, 0.5)] h-[100%] w-[100%] z-[90] fixed top-0 left-0 hidden"
+        ></div>
 
-    <div
-      id="sidebar"
-      class="h-[100dvh] bg-[#f7f2fa] w-[250px] fixed top-0 left-[-250px] rounded-tr-[20px] rounded-br-[20px] z-[99] transition-all duration-300 ease-in-out"
-    >
-      <div
-        class="w-full flex flex-col items-center justify-center h-40 bg-[#d89a74] rounded-tr-[20px]"
-      >
-        <img src="./images/logo.png" class="w-[40px] h-[50px]" alt="logo" />
-        <span class="text-[#382114] text-[10px]">BARISTO</span>
-        <span class="text-[#382114] text-[7px] mt-[-5px]">Technologies</span>
-      </div>
-      <nav>
-        <ul class="flex flex-col space-y-6 py-4 ps-3">
-          <li>
-            <a href="./" onclick="navigateWithDelay(event, './')">Home</a>
-          </li>
-          <li>
-            <a
-              href="./about.html"
-              onclick="navigateWithDelay(event, './about.html')"
-              >About</a
+        <div
+            id="sidebar"
+            class="h-[100dvh] bg-[#f7f2fa] w-[250px] fixed top-0 left-[-250px] rounded-tr-[20px] rounded-br-[20px] z-[99] transition-all duration-300 ease-in-out"
+        >
+            <div
+                class="w-full flex flex-col items-center justify-center h-40 bg-[#d89a74] rounded-tr-[20px]"
             >
-          </li>
-          <li>
-            <a
-              href="./services.html"
-              onclick="navigateWithDelay(event, './services.html')"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="./contact.html"
-              onclick="navigateWithDelay(event, './contact.html')"
-              aria-current="page"
-              class="text-[#795548]"
-              >Contact us</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="h-[1px] bg-gray-300"></div>
-      <div class="flex space-x-8 justify-center py-5">
-        <a href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </div>
-    <main>
-      <section
-        id="contact"
-        class="pt-14 md:pt-[70px] bg-[#f8f9fa] w-full overflow-hidden"
-      >
-        <!-- Header Banner -->
-        <div class="relative w-full h-[400px]">
-          <img
-            src="./images/contact_bg.jpg"
-            alt="contact background"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute inset-0 bg-black/50 flex items-center">
-            <h2
-              class="text-white text-5xl md:text-6xl font-bold pl-10 md:pl-20 slide-right"
-            >
-              Contact us
-            </h2>
-          </div>
+                <img src="./images/logo.png" class="w-[40px] h-[50px]" alt="logo" />
+                <span class="text-[#382114] text-[10px]">BARISTO</span>
+                <span class="text-[#382114] text-[7px] mt-[-5px]">Technologies</span>
+            </div>
+            <nav>
+                <ul class="flex flex-col space-y-6 py-4 ps-3">
+                    <li>
+                        <a href="./" onclick="navigateWithDelay(event, './')">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" onclick="navigateWithDelay(event, './about.html')"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./services.html"
+                            onclick="navigateWithDelay(event, './services.html')"
+                            >Services</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./contact.html"
+                            onclick="navigateWithDelay(event, './contact.html')"
+                            aria-current="page"
+                            class="text-[#795548]"
+                            >Contact us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <div class="h-[1px] bg-gray-300"></div>
+            <div class="flex space-x-8 justify-center py-5">
+                <a
+                    href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr"
+                    target="_blank"
+                    ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/baristotechnologies/#" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
         </div>
-        <div class="max-w-7xl mx-auto py-10 md:py-20 px-4 sm:px-6 lg:px-8">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <!-- Left Side - Contact Info -->
-            <div class="empover-img">
-              <p class="text-gray-500 text-2xl md:text-3xl mb-4">
-                Get in touch with us
-              </p>
-              <h2
-                class="text-4xl lg:text-5xl font-bold text-[#795548] mb-12 leading-tight"
-              >
-                Do you need help?<br />
-                Contact us now!
-              </h2>
+        <main>
+            <section id="contact" class="pt-14 md:pt-[70px] bg-[#f8f9fa] w-full overflow-hidden">
+                <!-- Header Banner -->
+                <div class="relative w-full h-[400px]">
+                    <img
+                        src="./images/contact_bg.jpg"
+                        alt="contact background"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="absolute inset-0 bg-black/50 flex items-center">
+                        <h2
+                            class="text-white text-5xl md:text-6xl font-bold pl-10 md:pl-20 translate-x-[-40%] opacity-0 slide-right"
+                        >
+                            Contact us
+                        </h2>
+                    </div>
+                </div>
+                <div class="max-w-7xl mx-auto py-10 md:py-20 px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                        <!-- Left Side - Contact Info -->
+                        <div class="translate-x-[-30%] opacity-0 empover-img">
+                            <p class="text-gray-500 text-2xl md:text-3xl mb-4">
+                                Get in touch with us
+                            </p>
+                            <h2
+                                class="text-4xl lg:text-5xl font-bold text-[#795548] mb-12 leading-tight"
+                            >
+                                Do you need help?<br />
+                                Contact us now!
+                            </h2>
 
-              <div class="space-y-8">
-                <!-- Make a visit -->
-                <div class="flex items-start space-x-4">
-                  <div class="flex flex-col my-auto">
-                    <i
-                      class="fas fa-map-marker-alt text-transparent text-5xl bg-gradient-to-br from-[#412518] to-[#b35d38] bg-clip-text"
-                    ></i>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">
-                      Make a visit now
-                    </h3>
-                    <p class="text-gray-500 text-sm">Daliya Kpees Avenue</p>
-                    <p class="text-gray-500 text-sm">
-                      2nd floor,Uphill Malappuram
+                            <div class="space-y-8">
+                                <!-- Make a visit -->
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex flex-col my-auto">
+                                        <i
+                                            class="fas fa-map-marker-alt text-transparent text-5xl bg-gradient-to-br from-[#412518] to-[#b35d38] bg-clip-text"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                                            Make a visit now
+                                        </h3>
+                                        <p class="text-gray-500 text-sm">Daliya Kpees Avenue</p>
+                                        <p class="text-gray-500 text-sm">
+                                            2nd floor,Uphill Malappuram
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Phone Contact -->
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex flex-col my-auto">
+                                        <i
+                                            class="fas fa-phone text-transparent text-5xl bg-gradient-to-br from-[#412518] to-[#b35d38] bg-clip-text"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                                            Feel free to contact
+                                        </h3>
+                                        <p class="text-gray-500 text-sm">+91 8138074136</p>
+                                    </div>
+                                </div>
+
+                                <!-- Email Contact -->
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex flex-col my-auto">
+                                        <i
+                                            class="fas fa-envelope text-transparent text-5xl bg-gradient-to-br from-[#412518] to-[#b35d38] bg-clip-text"
+                                        ></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                                            Get in touch
+                                        </h3>
+                                        <p class="text-gray-500 text-sm">baristotechno@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Side - Contact Form -->
+                        <div
+                            class="bg-white p-10 rounded-3xl shadow-lg translate-x-[30%] opacity-0 empover-text"
+                        >
+                            <h3 class="text-2xl font-semibold text-[#795548] mb-8">
+                                How may we help you?
+                            </h3>
+
+                            <form class="space-y-6">
+                                <!-- Name Field -->
+                                <div class="relative">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter your name *"
+                                        class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-0 text-gray-700 pr-12"
+                                    />
+                                    <i
+                                        class="fas fa-user absolute right-5 top-1/2 -translate-y-1/2 text-gray-400"
+                                    ></i>
+                                </div>
+
+                                <!-- Phone Field -->
+                                <div class="relative">
+                                    <input
+                                        type="tel"
+                                        placeholder="Enter your number *"
+                                        class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-0 text-gray-700 pr-12"
+                                    />
+                                    <i
+                                        class="fas fa-phone absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400"
+                                    ></i>
+                                </div>
+
+                                <!-- Message Field -->
+                                <div class="relative">
+                                    <textarea
+                                        rows="4"
+                                        placeholder="Enter your message"
+                                        class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-0 text-gray-700 pr-12 resize-none"
+                                    ></textarea>
+                                    <i
+                                        class="fas fa-comment absolute right-5 top-5 text-gray-400"
+                                    ></i>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button
+                                    type="submit"
+                                    class="w-full bg-gradient-to-b from-[#412518] to-[#b35d38] hover:opacity-90 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg"
+                                >
+                                    Send Message
+                                </button>
+
+                                <!-- Privacy Notice -->
+                                <p class="text-xs text-gray-400 text-center leading-relaxed">
+                                    I understand that my data will be held securely in accordance
+                                    with the
+                                    <a href="#" class="text-[#795548] hover:underline"
+                                        >Privacy policy</a
+                                    >
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer Section -->
+        <footer class="bg-[#f8f9fa] py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Company Info -->
+                    <div class="lg:col-span-1">
+                        <!-- Logo -->
+                        <div class="flex items-center justify-start mb-4">
+                            <img src="images/logo_name.svg" alt="logo" class="w-[45%] md:w-[60%]" />
+                        </div>
+                        <p class="text-gray-600 text-sm">
+                            Digital solution partner for your business.
+                        </p>
+                    </div>
+
+                    <!-- Services -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Services</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a class="text-gray-600 text-sm hover:text-gray-900"
+                                    >Website Design & Development</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-gray-600 text-sm hover:text-gray-900"
+                                    >Mobile App Development</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-gray-600 text-sm hover:text-gray-900"
+                                    >Custom Software Solutions</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-gray-600 text-sm hover:text-gray-900"
+                                    >Software Quality Assurance & Testing</a
+                                >
+                            </li>
+                            <li>
+                                <a class="text-gray-600 text-sm hover:text-gray-900"
+                                    >Creative & Visual Design</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Other Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Other Links</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
+                                    >Support</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./termsAndCondition.html"
+                                    class="text-gray-600 text-sm hover:text-gray-900"
+                                    >Terms & Conditions</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Contact Us</h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-600 text-sm font-medium">
+                                Baristo Technologies PVT LTD.
+                            </p>
+                            <p class="text-gray-600 text-sm">
+                                2nd floor, Daliya KPees Avenue,<br />
+                                Malappuram - Perinthalmanna Rd, near collector<br />
+                                bungalow,<br />
+                                Up Hill, Malappuram, Kerala<br />
+                                676505, India
+                            </p>
+                            <p class="text-gray-600 text-sm">Phone: +91 95677 00323</p>
+
+                            <!-- Social Icons -->
+                            <div class="flex space-x-3 mt-4 pt-4">
+                                <a
+                                    href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr"
+                                    target="_blank"
+                                    class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                                >
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/baristotechnologies/#"
+                                    target="_blank"
+                                    class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                                >
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/company/baristo-technologies/"
+                                    target="_blank"
+                                    class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                                >
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
+                                >
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-200 mt-12 pt-8 text-center">
+                    <p class="text-gray-400 text-sm">
+                        © 2024, Baristo Technologies | All Rights Reserved.
                     </p>
-                  </div>
                 </div>
-
-                <!-- Phone Contact -->
-                <div class="flex items-start space-x-4">
-                  <div class="flex flex-col my-auto">
-                    <i
-                      class="fas fa-phone text-transparent text-5xl bg-gradient-to-br from-[#412518] to-[#b35d38] bg-clip-text"
-                    ></i>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">
-                      Feel free to contact
-                    </h3>
-                    <p class="text-gray-500 text-sm">+91 8138074136</p>
-                  </div>
-                </div>
-
-                <!-- Email Contact -->
-                <div class="flex items-start space-x-4">
-                  <div class="flex flex-col my-auto">
-                    <i
-                      class="fas fa-envelope text-transparent text-5xl bg-gradient-to-br from-[#412518] to-[#b35d38] bg-clip-text"
-                    ></i>
-                  </div>
-                  <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">
-                      Get in touch
-                    </h3>
-                    <p class="text-gray-500 text-sm">baristotechno@gmail.com</p>
-                  </div>
-                </div>
-              </div>
             </div>
-
-            <!-- Right Side - Contact Form -->
-            <div class="bg-white p-10 rounded-3xl shadow-lg empover-text">
-              <h3 class="text-2xl font-semibold text-[#795548] mb-8">
-                How may we help you?
-              </h3>
-
-              <form class="space-y-6">
-                <!-- Name Field -->
-                <div class="relative">
-                  <input
-                    type="text"
-                    placeholder="Enter your name *"
-                    class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-0 text-gray-700 pr-12"
-                  />
-                  <i
-                    class="fas fa-user absolute right-5 top-1/2 -translate-y-1/2 text-gray-400"
-                  ></i>
-                </div>
-
-                <!-- Phone Field -->
-                <div class="relative">
-                  <input
-                    type="tel"
-                    placeholder="Enter your number *"
-                    class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-0 text-gray-700 pr-12"
-                  />
-                  <i
-                    class="fas fa-phone absolute right-5 top-1/2 transform -translate-y-1/2 text-gray-400"
-                  ></i>
-                </div>
-
-                <!-- Message Field -->
-                <div class="relative">
-                  <textarea
-                    rows="4"
-                    placeholder="Enter your message"
-                    class="w-full px-5 py-4 border border-gray-200 rounded-xl focus:outline-none focus:ring-0 text-gray-700 pr-12 resize-none"
-                  ></textarea>
-                  <i
-                    class="fas fa-comment absolute right-5 top-5 text-gray-400"
-                  ></i>
-                </div>
-
-                <!-- Submit Button -->
-                <button
-                  type="submit"
-                  class="w-full bg-gradient-to-b from-[#412518] to-[#b35d38] hover:opacity-90 text-white py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg"
-                >
-                  Send Message
-                </button>
-
-                <!-- Privacy Notice -->
-                <p class="text-xs text-gray-400 text-center leading-relaxed">
-                  I understand that my data will be held securely in accordance
-                  with the
-                  <a href="#" class="text-[#795548] hover:underline"
-                    >Privacy policy</a
-                  >
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer Section -->
-    <footer class="bg-[#f8f9fa] py-16">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Company Info -->
-          <div class="lg:col-span-1">
-            <!-- Logo -->
-            <div class="flex items-center justify-start mb-4">
-              <img
-                src="images/logo_name.svg"
-                alt="logo"
-                class="w-[45%] md:w-[60%]"
-              />
-            </div>
-            <p class="text-gray-600 text-sm">
-              Digital solution partner for your business.
-            </p>
-          </div>
-
-          <!-- Services -->
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Services</h3>
-            <ul class="space-y-2">
-                <li>
-                  <a class="text-gray-600 text-sm hover:text-gray-900"
-                    >Website Design & Development</a
-                  >
-                </li>
-                <li>
-                  <a class="text-gray-600 text-sm hover:text-gray-900"
-                    >Mobile App Development</a
-                  >
-                </li>
-                <li>
-                  <a class="text-gray-600 text-sm hover:text-gray-900"
-                    >Custom Software Solutions</a
-                  >
-                </li>
-                <li>
-                  <a class="text-gray-600 text-sm hover:text-gray-900"
-                    >Software Quality Assurance & Testing</a
-                  >
-                </li>
-                <li>
-                  <a class="text-gray-600 text-sm hover:text-gray-900"
-                    >Creative & Visual Design</a
-                  >
-                </li>
-              </ul>
-          </div>
-
-          <!-- Other Links -->
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">
-              Other Links
-            </h3>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-gray-600 text-sm hover:text-gray-900"
-                  >Support</a
-                >
-              </li>
-              <li>
-                <a href="./termsAndCondition.html" class="text-gray-600 text-sm hover:text-gray-900"
-                  >Terms & Conditions</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Contact Us -->
-          <div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-4">Contact Us</h3>
-            <div class="space-y-3">
-              <p class="text-gray-600 text-sm font-medium">
-                Baristo Technologies PVT LTD.
-              </p>
-              <p class="text-gray-600 text-sm">
-                2nd floor, Daliya KPees Avenue,<br />
-                Malappuram - Perinthalmanna Rd, near collector<br />
-                bungalow,<br />
-                Up Hill, Malappuram, Kerala<br />
-                676505, India
-              </p>
-              <p class="text-gray-600 text-sm">Phone: +91 95677 00323</p>
-
-              <!-- Social Icons -->
-              <div class="flex space-x-3 mt-4 pt-4">
-                <a
-                  href="https://www.facebook.com/people/Baristo-Technologies-PVT-LTD/61571396475815/?mibextid=wwXIfr&rdid=0U2NPXctMSAxk9qi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GvRSpNc8Q%2F%3Fmibextid%3DwwXIfr" target="_blank"
-                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/baristotechnologies/#" target="_blank"
-                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/baristo-technologies/" target="_blank"
-                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="#"
-                  class="w-8 h-8 bg-gray-800 rounded text-white flex items-center justify-center hover:bg-gray-700"
-                >
-                  <i class="fas fa-phone"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Copyright -->
-        <div class="border-t border-gray-200 mt-12 pt-8 text-center">
-          <p class="text-gray-400 text-sm">
-            © 2024, Baristo Technologies | All Rights Reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <!-- Your custom JS -->
-    <script src="script.js"></script>
-  </body>
+        </footer>
+        <!-- gsap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <!-- Your custom JS -->
+        <script src="script.js"></script>
+    </body>
 </html>
